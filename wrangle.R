@@ -135,7 +135,6 @@ sites_trim$name[which(sites_trim$name=="")]<-"unnamed"
 
 sites_trim$name<-paste(sites_trim$name," (",substr(sites_trim$site_id,-2+nchar(sites_trim$site_id),nchar(sites_trim$site_id)),")",sep="")
 
-write.csv(sites_trim,"sites_trim.csv")
 #sites_trim$name<-paste(sites_trim$name,round(sites_trim$lat,digits=3))
 
 #sites_trim %>% select(site_id,name,state) %>% group_by(name,state) %>%
@@ -494,8 +493,6 @@ daterr$group<-daterr$state
 daterr<-unique(daterr)
 daterr<-daterr %>% arrange(variable)
 
-write.csv(daterr,"daterr.csv")
-
 
 do<-0
 if(do==1){
@@ -537,7 +534,7 @@ daterr_wide$group<-daterr_wide$manmade_natural
 zoomstart<-9
 #pointradius<-5000
 pointradius<-2000
-
+}
 
 daterr_profiles0<-daterr %>% select(-variable,-value,-depth,-units) %>% unique()
 daterr_profiles<-merge(daterr_profiles0,profiles_trim_summ,by="site_id")
@@ -548,11 +545,17 @@ daterr_profiles_start<-daterr_profiles %>% arrange(name,variable,depth) %>% as.d
 vars_profiles<-unique(daterr_profiles$variable)
 namestate_profiles<-unique(daterr_profiles$namestate)
 
+write.csv(daterr,"daterr.csv")
+write.csv(sites_trim,"sites_trim.csv")
+write.csv(daterr_profiles_start,"daterr_profiles.csv")
+
 #Lake Delavan WI
 #Castle Lake CA
 
 
-}
+#}
+
+
 
 # random sample/subset the lakes to make a restricted sample for class
 
