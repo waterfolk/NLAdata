@@ -135,6 +135,7 @@ sites_trim$name[which(sites_trim$name=="")]<-"unnamed"
 
 sites_trim$name<-paste(sites_trim$name," (",substr(sites_trim$site_id,-2+nchar(sites_trim$site_id),nchar(sites_trim$site_id)),")",sep="")
 
+write.csv(sites_trim,"sites_trim.csv")
 #sites_trim$name<-paste(sites_trim$name,round(sites_trim$lat,digits=3))
 
 #sites_trim %>% select(site_id,name,state) %>% group_by(name,state) %>%
