@@ -341,14 +341,14 @@ zoopcts<-zoopcts[which(duplicated(zoopcts)==FALSE),]
 zoopmets_use<-unique(zoopmets$variable)[-grep("300|nat",unique(zoopmets$variable))]
 #zoopmets_use<-zoopmets_use[1:10] # worked
 #zoopmets_use<-zoopmets_use[1:20] # worked
-zoopmets_use<-zoopmets_use[1:30] #worked
+#zoopmets_use<-zoopmets_use[1:30] #worked with 30, on 3 Oct after splitting data into other repo
 
 #benthmets_use<-unique(benthmets$variable)[-grep("300|nat",unique(benthpmets$variable))]
 benthmets_use<-unique(benthmets$variable)
-benthmets_use<-benthmets_use[1:30]
+#benthmets_use<-benthmets_use[1:30] #worked with 30, on 3 Oct after splitting data into other repo
 
 phytocts_use<-unique(phytocts$variable)
-phytocts_use<-phytocts_use[1:30]
+#phytocts_use<-phytocts_use[1:30] #worked with 30, on 3 Oct after splitting data into other repo
 
 zoopmets<- zoopmets %>% filter(variable %in% zoopmets_use)
 benthmets<- benthmets %>% filter(variable %in% benthmets_use)
