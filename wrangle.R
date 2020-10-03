@@ -496,6 +496,9 @@ daterr<-daterr %>% arrange(variable)
 write.csv(daterr,"daterr.csv")
 
 
+do<-0
+if(do==1){
+
 vars<-unique(daterr$variable)
 #vars<-c("area_ha",unique(daterr$variable))
 states<-c("all",sort(unique(daterr$state)))
@@ -548,7 +551,7 @@ namestate_profiles<-unique(daterr_profiles$namestate)
 #Castle Lake CA
 
 
-
+}
 
 # random sample/subset the lakes to make a restricted sample for class
 
