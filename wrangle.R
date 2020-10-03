@@ -341,14 +341,14 @@ zoopcts<-zoopcts[which(duplicated(zoopcts)==FALSE),]
 zoopmets_use<-unique(zoopmets$variable)[-grep("300|nat",unique(zoopmets$variable))]
 #zoopmets_use<-zoopmets_use[1:10] # worked
 #zoopmets_use<-zoopmets_use[1:20] # worked
-zoopmets_use<-zoopmets_use[1:10] #worked
+zoopmets_use<-zoopmets_use[1:30] #worked
 
 #benthmets_use<-unique(benthmets$variable)[-grep("300|nat",unique(benthpmets$variable))]
 benthmets_use<-unique(benthmets$variable)
-benthmets_use<-benthmets_use[1:10]
+benthmets_use<-benthmets_use[1:30]
 
 phytocts_use<-unique(phytocts$variable)
-phytocts_use<-phytocts_use[1:10]
+phytocts_use<-phytocts_use[1:30]
 
 zoopmets<- zoopmets %>% filter(variable %in% zoopmets_use)
 benthmets<- benthmets %>% filter(variable %in% benthmets_use)
@@ -556,7 +556,7 @@ namestate_profiles<-unique(daterr_profiles$namestate)
 # random sample/subset the lakes to make a restricted sample for class
 
 #sampling<-sample(unique(daterr$site_id),25)
-do<-1
+do<-0
 if(do==1){
   sampling<-sample(unique(daterr$site_id),50)
   
