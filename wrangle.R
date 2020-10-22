@@ -182,23 +182,23 @@ profiles_trim_summ<-profiles_trim %>% group_by(site_id,depth,variable) %>%
   dplyr::summarize(value=mean(value,na.rm=TRUE)) %>% as.data.frame()
 
 
-profiles_top1m<-profiles_trim %>% filter(depth<=1) %>% group_by(site_id) %>%
+profiles_top2m<-profiles_trim %>% filter(depth<=2) %>% group_by(site_id) %>%
   dplyr::summarize(temperature=mean(value[which(variable=="temperature")],na.rm=TRUE),
                    oxygen=mean(value[which(variable=="oxygen")],na.rm=TRUE),
-                   ph=mean(value[which(variable=="ph")],na.rm=TRUE)) %>% mutate(depth="top1m") %>% melt(id.vars=c("site_id","depth"))
-profiles_1to3m<-profiles_trim %>% filter(depth>1 & depth<=3) %>% group_by(site_id) %>%
+                   ph=mean(value[which(variable=="ph")],na.rm=TRUE)) %>% mutate(depth="top2m") %>% melt(id.vars=c("site_id","depth"))
+profiles_2to4m<-profiles_trim %>% filter(depth>2 & depth<=4) %>% group_by(site_id) %>%
   dplyr::summarize(temperature=mean(value[which(variable=="temperature")],na.rm=TRUE),
                    oxygen=mean(value[which(variable=="oxygen")],na.rm=TRUE),
-                   ph=mean(value[which(variable=="ph")],na.rm=TRUE)) %>% mutate(depth="1to3m") %>% melt(id.vars=c("site_id","depth"))
-profiles_below3m<-profiles_trim %>% filter(depth>3) %>% group_by(site_id) %>%
+                   ph=mean(value[which(variable=="ph")],na.rm=TRUE)) %>% mutate(depth="2to4m") %>% melt(id.vars=c("site_id","depth"))
+profiles_below4m<-profiles_trim %>% filter(depth>4) %>% group_by(site_id) %>%
   dplyr::summarize(temperature=mean(value[which(variable=="temperature")],na.rm=TRUE),
                    oxygen=mean(value[which(variable=="oxygen")],na.rm=TRUE),
-                   ph=mean(value[which(variable=="ph")],na.rm=TRUE)) %>% mutate(depth="below3m") %>% melt(id.vars=c("site_id","depth"))
+                   ph=mean(value[which(variable=="ph")],na.rm=TRUE)) %>% mutate(depth="below4m") %>% melt(id.vars=c("site_id","depth"))
 profiles_below5m<-profiles_trim %>% filter(depth>5) %>% group_by(site_id) %>%
   dplyr::summarize(temperature=mean(value[which(variable=="temperature")],na.rm=TRUE),
                    oxygen=mean(value[which(variable=="oxygen")],na.rm=TRUE),
                    ph=mean(value[which(variable=="ph")],na.rm=TRUE)) %>% mutate(depth="below5m") %>% melt(id.vars=c("site_id","depth"))
-profiles<-rbind(profiles_top1m,profiles_1to3m,profiles_below3m,profiles_below5m)
+profiles<-rbind(profiles_top2m,profiles_2to4m,profiles_below4m,profiles_below5m)
 
 profiles_trim_summ$variable<-as.character(profiles_trim_summ$variable)
 profiles_trim_summ$variable[which(profiles_trim_summ$variable=="temperature")]<-"temperature (C)"
@@ -441,27 +441,32 @@ daterr1$units[which(daterr1$var=="depthmax")]<-"m"
 daterr1$units[which(daterr1$var=="elevation")]<-"m"
 daterr1$units[which(daterr1$var=="elevmax_bsn")]<-"m"
 daterr1$units[which(daterr1$var=="elevmean_bsn")]<-"m"
-daterr1$units[which(daterr1$var=="houseden_1000")]<-"NA"
+daterr1$units[which(daterr1$var=="houseden_1000")]<-"units/mile2"
+daterr1$units[which(daterr1$var=="houseden_bsn")]<-"units/mile2"
 daterr1$units[which(daterr1$var=="latitude ")]<-"degrees N"
-daterr1$units[which(daterr1$var=="micl_result")]<-"NA"
-daterr1$units[which(daterr1$var=="micx_result")]<-"NA"
+daterr1$units[which(daterr1$var=="micl_result")]<-"ug/L"
+daterr1$units[which(daterr1$var=="micx_result")]<-"ug/L"
+#daterr1$units[which(daterr1$var=="micl_result")]<-"NA"
+#daterr1$units[which(daterr1$var=="micx_result")]<-"NA"
+
 daterr1$units[which(daterr1$var=="nadp_nh4_bsn")]<-"kg/km2"
 daterr1$units[which(daterr1$var=="nadp_no3_bsn")]<-"kg/km2"
 daterr1$units[which(daterr1$var=="nadp_totaln_bsn")]<-"kg/km2"
 daterr1$units[grep("pct_bsn",daterr1$var)]<-"%"
-daterr1$units[which(daterr1$var=="oxygen1to3m")]<-"mg/L"
-daterr1$units[which(daterr1$var=="oxygenbelow3m")]<-"mg/L"
+daterr1$units[which(daterr1$var=="oxygentop2m")]<-"mg/L"
+daterr1$units[which(daterr1$var=="oxygen2to4m")]<-"mg/L"
+daterr1$units[which(daterr1$var=="oxygenbelow4m")]<-"mg/L"
 daterr1$units[which(daterr1$var=="oxygenbelow5m")]<-"mg/L"
-daterr1$units[which(daterr1$var=="oxygentop1m")]<-"mg/L"
 daterr1$units[which(daterr1$var=="ph")]<-"ph"
-daterr1$units[which(daterr1$var=="phbelow3m ")]<-"ph units"
+daterr1$units[which(daterr1$var=="phtop2m")]<-"ph units"
+daterr1$units[which(daterr1$var=="ph2to4m")]<-"ph units"
+daterr1$units[which(daterr1$var=="phbelow4m ")]<-"ph units"
 daterr1$units[which(daterr1$var=="phbelow5m")]<-"ph units"
-daterr1$units[which(daterr1$var=="phtop1m")]<-"ph units"
 daterr1$units[which(daterr1$var=="secchi")]<-"m"
-daterr1$units[which(daterr1$var=="temperature1to3m")]<-"C"
-daterr1$units[which(daterr1$var=="temperaturebelow3m")]<-"C"
+daterr1$units[which(daterr1$var=="temperaturetop2m")]<-"C"
+daterr1$units[which(daterr1$var=="temperature2to4m")]<-"C"
+daterr1$units[which(daterr1$var=="temperaturebelow4m")]<-"C"
 daterr1$units[which(daterr1$var=="temperaturebelow5m")]<-"C"
-daterr1$units[which(daterr1$var=="temperaturetop1m")]<-"C"
 
 daterr1$units[grep("pind",daterr1$var)]<-"% of individuals present"
 daterr1$units[grep("ptax",daterr1$var)]<-"% of species present"
