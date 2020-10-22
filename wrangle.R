@@ -529,8 +529,8 @@ categoricals<-c("none","state","region","manmade_natural","area_group","depth_gr
 
 daterr_wide<-daterr %>% select(-depth,-units) %>% pivot_wider(names_from = variable, values_from = value, values_fn=mean) %>% as.data.frame()
 #daterr_wide<-merge(daterr %>% select(site_id,area_ha,elevation,lat) %>% unique(),daterr_wide0,by="site_id")
-daterr_wide$X<-daterr_wide$'temperaturetop1m (C)'
-daterr_wide$Y<-daterr_wide$'oxygentop1m (mg/L)'
+daterr_wide$X<-daterr_wide$'temperaturetop2m (C)'
+daterr_wide$Y<-daterr_wide$'oxygentop2m (mg/L)'
 #daterr_wide$X<-daterr_wide$temperaturetop1m
 #daterr_wide$Y<-daterr_wide$oxygentop1m
 #daterr_wide$group<-daterr_wide$lake_origin
