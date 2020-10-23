@@ -339,6 +339,11 @@ zoopcts<-zoopcts[which(duplicated(zoopcts)==FALSE),]
 #zoopmets<-zoopmets %>% filter(variable=="zp_asplan300_ptax")
 #zoopmets<-zoopmets %>% filter(variable=="zp_asplan300_ptax")
 zoopmets_use<-unique(zoopmets$variable)[-grep("300|nat",unique(zoopmets$variable))]
+zoopmets_use<-c(zoopmets_use,"TOTL300_BIO","ZOCN300_BIO","ZOFN_BIO")
+#TOTL300_BIO
+#ZOCN300_BIO
+#ZOFN_BIO
+
 #zoopmets_use<-zoopmets_use[1:10] # worked
 #zoopmets_use<-zoopmets_use[1:20] # worked
 #zoopmets_use<-zoopmets_use[1:30] #worked with 30, on 3 Oct after splitting data into other repo
