@@ -339,7 +339,7 @@ zoopcts<-zoopcts[which(duplicated(zoopcts)==FALSE),]
 #zoopmets<-zoopmets %>% filter(variable=="zp_asplan300_ptax")
 #zoopmets<-zoopmets %>% filter(variable=="zp_asplan300_ptax")
 zoopmets_use<-unique(zoopmets$variable)[-grep("300|nat",unique(zoopmets$variable))]
-zoopmets_use<-c(zoopmets_use,"TOTL300_BIO","ZOCN300_BIO","ZOFN_BIO")
+zoopmets_use<-c(zoopmets_use,"zp_totl300_bio","zp_zocn300_bio","zp_zofn_bio")
 #TOTL300_BIO
 #ZOCN300_BIO
 #ZOFN_BIO
