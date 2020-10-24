@@ -370,7 +370,7 @@ phytocts<- phytocts %>% filter(variable %in% phytocts_use)
 
 daterr0<-rbind(profiles,algaltoxins,waterchem,
                chla,secchi,keyvars,
-               watershed,zoopmets,#benthmets,
+               watershed,zoopmets,benthmets,
                phytocts,zoopcts)#,benthmets,phytocts)#,zoopcts)
 daterr0$variable<-paste(daterr0$variable,daterr0$depth,sep="")
 daterr0<-merge(daterr0,maxdepths,by="site_id")
