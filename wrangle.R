@@ -344,6 +344,12 @@ zoopmets_use<-c(zoopmets_use,"zp_totl300_bio","zp_zocn300_bio","zp_zofn_bio")
 #ZOCN300_BIO
 #ZOFN_BIO
 
+#zoopcts_sum<-zoopcts %>% group_by(site_id) %>% dplyr::summarize(value=sum(value))
+#zoopcts_sum$variable<-"zoop_density_total"
+#zoopcts_sum$depth<-""
+#zoopcts_sum<-zoopcts_sum %>% select(site_id,depth,variable,value)
+#zoopcts<-rbind(zoopcts,zoopcts_sum)
+
 #zoopmets_use<-zoopmets_use[1:10] # worked
 #zoopmets_use<-zoopmets_use[1:20] # worked
 #zoopmets_use<-zoopmets_use[1:30] #worked with 30, on 3 Oct after splitting data into other repo
@@ -364,7 +370,8 @@ phytocts<- phytocts %>% filter(variable %in% phytocts_use)
 
 daterr0<-rbind(profiles,algaltoxins,waterchem,
                chla,secchi,keyvars,
-               watershed,zoopmets,benthmets,phytocts)#,benthmets,phytocts)#,zoopcts)
+               watershed,zoopmets,#benthmets,
+               phytocts,zoopcts)#,benthmets,phytocts)#,zoopcts)
 daterr0$variable<-paste(daterr0$variable,daterr0$depth,sep="")
 daterr0<-merge(daterr0,maxdepths,by="site_id")
 
@@ -480,11 +487,13 @@ daterr1$units[grep("_den",daterr1$var)]<-"individuals per Liter"
 daterr1$units[grep("_bio",daterr1$var)]<-"biomass units"
 
 daterr1$units[grep("_phyto_density",daterr1$var)]<-"individuals per Liter"
+daterr1$units[grep("_zoop_density",daterr1$var)]<-"individuals per Liter"
 daterr1$units[grep("_phyto_biovolume",daterr1$var)]<-"biomass per Liter"
 
 daterr1$units[grep("_ntax",daterr1$var)]<-"number of taxa present"
 daterr1$units[grep("_ptax",daterr1$var)]<-"% of taxa present"
 
+#daterr1$units[grep("zoop_density_total",daterr1$var)]<-"individuals per Liter"
 
 
 
