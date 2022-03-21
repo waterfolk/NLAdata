@@ -1,0 +1,3 @@
+"COLUMN_NAME"	"LABEL"	"SAMPLE_TYPE"	"LEGAL_VALUES"	"RANGE_LOW"	"RANGE_HIGH"
+"PUBLICATION_DATE"	"Date the dataset was published to the NARS site"				
+"TAXA_ID"	"NLA Taxon ID number"				
