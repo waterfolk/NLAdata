@@ -253,15 +253,6 @@ secchi<-secchi %>% select(site_id,depth,variable,value)
 watershed_names<-c("damcnt_bsn","damden_bsn","elevmean_bsn","elevmax_bsn",
                    "houseden_bsn","houseden_1000",
                    "nadp_totaln_bsn","nadp_no3_bsn","nadp_nh4_bsn",
-                   "nlcd2006_11area_bsn","nlcd2006_12area_bsn",
-                   "nlcd2006_22area_bsn","nlcd2006_23area_bsn","nlcd2006_24area_bsn",
-                   "nlcd2006_41area_bsn","nlcd2006_42area_bsn","nlcd2006_43area_bsn",
-                   "nlcd2006_82area_bsn",
-                   "nlcd2006_90area_bsn","nlcd2006_95area_bsn"
-)
-watershed_names<-c("damcnt_bsn","damden_bsn","elevmean_bsn","elevmax_bsn",
-                   "houseden_bsn","houseden_1000",
-                   "nadp_totaln_bsn","nadp_no3_bsn","nadp_nh4_bsn",
                    "nlcd2006_11pct_bsn","nlcd2006_12pct_bsn",
                    "nlcd2006_22pct_bsn","nlcd2006_23pct_bsn","nlcd2006_24pct_bsn",
                    "nlcd2006_41pct_bsn","nlcd2006_42pct_bsn","nlcd2006_43pct_bsn",
