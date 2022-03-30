@@ -483,6 +483,8 @@ stubborndf<-data.frame(year="2012",file="nla2012_wide_phytoplankton_count_021220
                        uid,site_id,date_col,units,
                        var,depth,result)
 stubborndf<-unique(stubborndf)
+stubborndf<-stubborndf %>% group_by(year,file,uid,site_id,date_col,units,var,depth) %>%
+  dplyr::summarize(result=sum(result,na.rm=TRUE)) %>% as.data.frame()
 
 uidsiteidkey<-merge(nla2012_wide_siteinfo_08232016 %>% select(uid,site_id),stubborndf %>% select(uid),by="uid") %>% unique()
 
@@ -491,7 +493,6 @@ dataformati<-merged %>% select(year,file,uid,site_id,date_col,units,var,depth,re
 objformati<-paste("format_","nla2012_wide_phytoplankton_count_02122014",sep="")
 assign(objformati,data.frame(dataformati))
 #############################################
-
 
 formatted<-ls()[grep("format_",ls())]
 
