@@ -452,10 +452,10 @@ result<-c()
 
 datastubborn<-nla2012_wide_phytoplankton_count_02122014
 result_names<-c("abundance","biovolume","density")
-resultparts<-unique(datastubborn$target_taxon) %>% sort()
+resultparts<-unique(datastubborn$genus) %>% sort()
 
 for(i in 1:length(resultparts)){
-  datai<-datastubborn %>% filter(target_taxon==resultparts[i])
+  datai<-datastubborn %>% filter(genus==resultparts[i])
   
   uidi<-datai$uid
   site_idi<-datai$site_id
@@ -464,7 +464,7 @@ for(i in 1:length(resultparts)){
 #  vari<-rep(vari,length(uidi))
   depthi<-""
   resulti<-datai[,which(names(datai) %in% result_names)]
-  resultparti<-datai$target_taxon
+  resultparti<-datai$genus
   
   dfi<-data.frame(site_idi,uidi,date_coli,depthi,resultparti,resulti)
   
