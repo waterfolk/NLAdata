@@ -700,6 +700,8 @@ names(daterr_profiles3)<-gsub(".x","",names(daterr_profiles3))
 
 daterr_profiles_out<-daterr_profiles3
 
+daterr_out$value<-signif(daterr_out$value,digits=3)
+
 write.csv(daterr_out,"daterr.csv")
 write.csv(sitedateyears_rbind,"sites_trim.csv")
 write.csv(daterr_profiles_out,"daterr_profiles.csv")
