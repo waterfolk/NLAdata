@@ -754,9 +754,7 @@ daterr<-daterr1
 #daterr<-rbind(daterr_all,daterr1)
 #daterr$group<-daterr$state
 daterr<-unique(daterr)
-daterr<-daterr %>% arrange(var)
 
-daterr_out<-daterr
 
 daterr_profiles0<-daterr[grep("profile",daterr$file),]
 daterr_profiles1<-daterr_profiles0 %>% select(-area_ha,-elevation,-lat,-lon,-manmade_natural,-state,-ag_eco3,-epa_reg)
@@ -768,6 +766,23 @@ names(daterr_profiles3)<-gsub(".x","",names(daterr_profiles3))
 
 daterr_profiles_out<-daterr_profiles3
 
+daterr_profiles3$depth<-as.numeric(daterr_profiles3$depth)
+depthmaxes<-daterr_profiles3 %>% select(uid,depth) %>% group_by(uid) %>%
+  dplyr::summarize(depthmax=max(depth,na.rm=TRUE)) %>% as.data.frame()
+depthmaxes$depthmax[which(depthmaxes$depthmax<0)]<-NA
+
+daterr_depthmaxes0<-daterr[which(duplicated(daterr$uid)==FALSE),]
+daterr_depthmaxes<-merge(daterr_depthmaxes0 %>% select(-value,-var,-units,file),
+                         depthmaxes,by="uid")
+#daterr_depthmaxes<-merge(sitedateyears_rbind,depthmaxes,by="uid")
+daterr_depthmaxes<-daterr_depthmaxes %>% rename(value=depthmax)
+daterr_depthmaxes$var<-"depthmax (m)"
+daterr_depthmaxes$units<-"m"
+daterr_depthmaxes$file<-"nla2012_wide_profile_08232016 and nla_2017_profile_data"
+daterr<-rbind.fill(daterr,daterr_depthmaxes)
+
+daterr<-daterr %>% arrange(var)
+daterr_out<-daterr
 daterr_out$value<-signif(daterr_out$value,digits=3)
 
 write.csv(daterr_out,"daterr.csv")
