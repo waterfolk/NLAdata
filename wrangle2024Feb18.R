@@ -776,7 +776,7 @@ daterr_depthmaxes<-merge(daterr_depthmaxes0 %>% select(-value,-var,-units,file),
                          depthmaxes,by="uid")
 #daterr_depthmaxes<-merge(sitedateyears_rbind,depthmaxes,by="uid")
 daterr_depthmaxes<-daterr_depthmaxes %>% rename(value=depthmax)
-daterr_depthmaxes$var<-"depthmax (m)"
+daterr_depthmaxes$var<-"depthmax"
 daterr_depthmaxes$units<-"m"
 daterr_depthmaxes$file<-"nla2012_wide_profile_08232016 and nla_2017_profile_data"
 daterr<-rbind.fill(daterr,daterr_depthmaxes)
