@@ -1,0 +1,97 @@
+COLUMN_NAME	DESCRIPTION	LEGAL_VALUES	UNITS
+PUBLICATION_DATE	Date the dataset was published to the NARS site	NA	NA
+UID	Unique identifier for the site/visit	NA	NA
+SITETYPE	Site type (probability-based or hand-picked) used in the NLA  survey design PROB | HAND. PROB for sites from probability survey.  Usually HAND for hand-picked lakes.	NA	NA
+UNIQUE_ID	Unique site ID based on location that does not depend on year sampled or any other factor. Form is NLA_ss_nnnnn  where ss state and nnnnn is number that starts at 10001. Includes both PROB and HAND lake types	NA	NA
+DOC_MDL	Method detection limit of dissolved organic carbon	NA	NA
+DOC_RESULT	Analyte value: dissolved organic carbon	NA	NA
+SULFATE_MDL	Method detection limit of sulfate	NA	NA
+SULFATE_RESULT	Analyte value: sulfate	NA	NA
+ANC_RESULT	Analyte value: acid neutralizing capacity	NA	NA
+CHLA_MDL	Method detection limit of chlorophyll-a	NA	NA
+CHLA_RESULT	Analyte value: chlorophyll-a	NA	NA
+ANC_MDL	Method detection limit of Acid Neutralizing Capacity (ueq/L)	NA	NA
+ANC_NARS_FLAG	"Flag assigned by NARS for Acid Neutralizing Capacity. ND = Non-detect, L = Estimated, Q = Quality-related issue, S = Shipping time exceedence, H = Holding time exceedence"	NA	NA
+DOC_NARS_FLAG	"Flag assigned by NARS for Dissolved Organic Carbon. ND = Non-detect, L = Estimated, Q = Quality-related issue, S = Shipping time exceedence, H = Holding time exceedence"	NA	NA
+SULFATE_NARS_FLAG	"Flag assigned by NARS for Sulfate. ND = Non-detect, L = Estimated, Q = Quality-related issue, S = Shipping time exceedence, H = Holding time exceedence"	NA	NA
+NTL_RESULT	Result for Total Nitrogen (mg N/L)	NA	NA
+NTL_MDL	Method detection limit for Total Nitrogen (mg N/L)	NA	NA
+NTL_NARS_FLAG	"Flag assigned by NARS for Total Nitrogen. ND = Non-detect, L = Estimated, Q = Quality-related issue, S = Shipping time exceedence, H = Holding time exceedence"	NA	NA
+PTL_RESULT	Result for Total Phosphorus (ug/L)	NA	NA
+PTL_MDL	Method detection limit for Total Phosphorus (ug/L)	NA	NA
+PTL_NARS_FLAG	"Flag assigned by NARS for Total Phosphorus. ND = Non-detect, L = Estimated, Q = Quality-related issue, S = Shipping time exceedence, H = Holding time exceedence"	NA	NA
+CHLA_NARS_FLAG	"Flag assigned by NARS for Chlorophyll a. ND = Non-detect, L = Estimated, Q = Quality-related issue, S = Shipping time exceedence, H = Holding time exceedence"	NA	NA
+CYLSPER_RESULT	Result for Cylindrospermopsin (ug/L)	NA	NA
+CYLSPER_MDL	Method detection limit for Cylindrospermopsin (ug/L)	NA	NA
+CYLSPER_NARS_FLAG	"Flag assigned by NARS for Cylindrospermopsin. ND = Non-detect, L = Estimated, Q = Quality-related issue, S = Shipping time exceedence, H = Holding time exceedence"	NA	NA
+MICX_RESULT	Result for Microcystin (ug/L)	NA	NA
+MICX_MDL	Method detection limit for Microcystin (ug/L)	NA	NA
+MICX_NARS_FLAG	"Flag assigned by NARS for Microcystin. ND = Non-detect, L = Estimated, Q = Quality-related issue, S = Shipping time exceedence, H = Holding time exceedence"	NA	NA
+ATRAZINE_RESULT	Result for Atrazine (ppb)	NA	NA
+ATRAZINE_MDL	Method detection limit for Atrazine (ppb)	NA	NA
+ATRAZINE_NARS_FLAG	"Flag assigned by NARS for Atrazine. ND = Non-detect, L = Estimated, Q = Quality-related issue, S = Shipping time exceedence, H = Holding time exceedence"	NA	NA
+MMI_BENT	Benthic MMI score	NA	NA
+TROPHIC_STATE	Trophic state (Oligotrophic/Mesotrophic/Eutrophic/Hypereutrophic)	|OLIGOTROPHIC|MESOTROPHIC|EUTROPHIC|HYPEREUTROPHIC	NA
+ECOLI_DETECT	E. coli Detection	Detected|Not Detected|Not Assessed	NA
+ECOLI_EPA_COND	E. coli condition based on EPA benchmark	Above Benchmark|At or Below Benchmark|Not Assessed	NA
+BENT_MMI_COND_2017	Condition class based on 2017 updated benthic MMI scores	Good|Fair|Poor|Not Assessed	NA
+ACID_COND	Acidity condition class	Good|Fair|Poor|Not Assessed	NA
+CHLA_COND	"Condition for Chlorophyll a indicator, based on CHLX"	NA	NA
+CYLSPER_DETECT	Cylindrospermopsin Detection	Detected|Not Detected|Not Assessed	NA
+CYLSPER_EPA_COND	Cylindrospermopsin condition based on EPA benchmark	Above Benchmark|At or Below Benchmark|Not Assessed	NA
+MICX_DETECT	Microcystin Detection	Detected|Not Detected|Not Assessed	NA
+MICX_EPA_COND	Microcystin condition based on EPA benchmark	Above Benchmark|At or Below Benchmark|Not Assessed	NA
+NTL_COND	Condition class based on total nitrogen	Good|Fair|Poor|Not Assessed	NA
+PTL_COND	Condition class based on total phosphorus	Good|Fair|Poor|Not Assessed	NA
+DRAWDOWN_COND_2CAT_2017	"Drawdown condition, specifially for 2017 survey"	Not Large|Large|Not Assessed	NA
+LITCVR_COND	Shallow water habitat condition class	Good|Fair|Poor|Not Assessed	NA
+LITRIPCVR_COND	Lake habitat complexity condition class	Good|Fair|Poor|Not Assessed	NA
+RDIS_COND	Lakeshore disturbance condition class	Low|Medium|High|Not Assessed	NA
+RVEG_COND	Riparian vegetation condition class	Good|Fair|Poor|Not Assessed	NA
+DIS_O2_CLS	Dissolved oxygen condition class	High (>=5 Ppm)|Moderate (>3-<5 Ppm)|Low (<=3 Ppm)|Not Assessed	NA
+MEAN_METAL_PEC_Q	"Mean metal probable effect concentration quotient (PEC-Q) calculated as the sum of up to seven individual metal PEC-Q values (i.e. As, Cd, Cr, Cu, Pb, Ni, Zn) divided by the number of metal classes used (i.e., 1 to 7). This group of metals have reliable PEC values. One-half (0.5x) the reporting limit was substituted for nondetect values. Values are unitless."	NA	NA
+MEAN_PEC_Q	Mean probable effect concentration quotient (PEC-Q) calculated as the average of Total_PAH13_PEC_Q and Mean_Metal_PEC_Q. Total PCBs were excluded due to the high percentage of censored data. Values are unitless.	NA	NA
+NLA_SCI_STATUS	"Sediment Contaminant Index condition assignment for NLA 2017 based on sediment contaminant thresholds of Mean_PEC_Q <=0.1 is Least Disturbed, Mean_PEC_Q >  0.1 and Mean_PEC_Q < 0.6 is Moderately Disturbed, and Mean_PEC_Q >=0.6 is Most Disturbed. "	NA	NA
+TOTAL_PAH13_PEC_Q	PAH13 probable effect concentration quotient (PEC-Q) calculated as Total_PAH13 divided by the Probable Effect Concentration (PEC) value of 22800 ng/g dw. Values are unitless.	NA	NA
+ATZ_DETECT	Atrazine Detection	Detected|Not Detected|Not Assessed	NA
+ATZ_EPA_COND_10	Condition based on Atrazine concentration and 10 ppb benchmark	At or Below Benchmark|Above Benchmark|Not Assessed	NA
+ATZ_EPA_COND_15	Condition based on Atrazine concentration and 15 ppb benchmark	At or Below Benchmark|Above Benchmark|Not Assessed	NA
+ATZ_EPA_COND_3.4	Condition based on Atrazine concentration and 3.4 ppb benchmark	At or Below Benchmark|Above Benchmark|Not Assessed	NA
+ZOOP_MMI_COND_2017	Condition class based on 2017 updated zooplankton MMI scores (following tow volume corrections)	Good|Fair|Poor|Not Assessed	NA
+E_COLI_NARS_FLAG	NARS flag	NA	NA
+E_COLI_PRESENT	Present/Absent	NA	NA
+E_COLI_RESULT	Most Probably Number - E. coli	NA	NA
+BFXHORIZDIST_DD	horizontal distance to drawdown zone using horiz_dist_dd (mean(horiz_dist_dd))	NA	NA
+BFXVERTHEIGHT_DD	vertical height to drawdown zone using vert_height_dd (mean(vert_height_dd))	NA	NA
+LitCvrQc3OE	NLA 2012 Shallow water habitat condition indicator	NA	NA
+LitRipCvrQc3OE	NLA 2012 Lake habitat complexity condition indicator	NA	NA
+RDis_IX	NLA 2012 Lakeshore disturbance condition indicator	NA	NA
+RVegQc3OE	NLA 2012 Riparian vegetation condition indicator	NA	NA
+B_G_DENS	Cyanobacteria cell density 	NA	NA
+AG_ECO3	"NARS 3-level reporting region (2015), based on aggregating AGGR_ECO9_2015 reporting regions.  No missing values allowed."	EHIGH|PLNLOW|WMTNS|	NA
+AG_ECO9	"NARS 9-level reporting region (2015), based on aggregated Omernik Level III ecoregions.  No missing values allowed."	CPL|NAP|NPL|SAP|SPL|TPL|UMW|WMT|XER|	NA
+AREA_CAT6	Lake area categories (6) used in most NLA survey designs. HAND sites also assigned area category. Based on AREA_HA.  No missing values allowed.	"(0,1]| (1,4]| (4,10]|(10,20]| (20,50]|  >50|"	NA
+EPA_REG	EPA Region.  No missing values allowed.	Region_01|Region_02|Region_03|Region_04|Region_05|Region_06|Region_07|Region_08|Region_09|Region_10|	NA
+FRAME07	Lake is included or excluded from sample frame for the NLA 2007 survey design. Blank values are not allowed or NA for missing	Exclude|Include| Not Present|	NA
+FRAME12	Lake is included or excluded from sample frame for the NLA 2012 survey design.  Blank values are not allowed or NA for missing. 	Exclude|Include| Not Present|	NA
+FRAME17	Lake is included or excluded from sample frame for the NLA 2017 survey design.   Blank values are not allowed or NA for missing.	Exclude|Include|Not Present	NA
+HUC2	Watershed Boundary Dataset Level 2 Hydrologic Unit Code where lake is located (based on NHDPlusV2 use of HUCs). No missing values allowed.	H01|H02|H03|H04|H05|H06|H07|H08|H09|H10|H11|H12|H13|H14|H15|H16|H17|H18|H19|H20	NA
+HUC2_NM	Watershed Boundary Dataset Level 2 Hydrologic Unit Region Name where lake is located. No missing values allowed.	Arkansas-Red-White Region|California Region|Great Basin Region|Great Lakes Region|Lower Colorado Region|Lower Mississippi Region|Missouri Region|Mid-Atlantic Region|New England Region|Ohio Region|Pacific Northwest Region|Rio Grande Region|Souris-Red-Rainy Region|South Atlantic Region|Tennessee Region|Texas Region|Upper Colorado Region|Upper Mississippi Region|	NA
+LAKE_ORGN	"Lake origin, based on evaluation on map or in field"	MAN_MADE|NATURAL|UNCERTAIN|UNKNOWN	NA
+LAT_DD83	"Latitude (based on NAD83 datum) assigned to lake during site selection from NHD-based sample frame. Generally, but not always, represents centriod of lake polygon in NHD.   No missing values allowed."	NA	NA
+LON_DD83	"Longitude (based on NAD83 datum) assigned to lake during site selection from NHD-based sample frame. Generally, but not always represents centriod of lake polygon in NHD.  No missing values allowed."	NA	NA
+MAJ_BAS_NM	Major USGS Hydrologic Basins derived from NHDPlus names Text of 16 basin names	Arkansas-White-Red Region|California Region| Great Basin Region|Great Lakes Region|Lower Colorado Region|Lower Mississippi Region|Mid Atlantic Region|Missouri Region|New England Region|Ohio-Tennessee Region|Pacific Northwest Region|Rio Grande-Texas-Gulf Region|Souris-Red-Rainy Region|South Atlantic Gulf Region|Upper Colorado Region|Upper Mississippi Region|	NA
+MAJ_BASIN	Major USGS Hydrologic Basins derived from NHDPlus codes Text of 16 basin codes from 01 to 18 with 05_06 and 12_13 combined preceeded by letter H	H01|H02|H03|H04|H05_06|H07|H08|H09|H10|H11|H12_13|H14|H15|H16|H17|H18	NA
+MISS_BASIN	"Within Mississippi Basin or outside, based on MAJ_BAS_NM values"	MISSISSIPPI_BASIN|NOT_MISSISSIPPI_BASIN	NA
+PSTL_CODE	"State two letter postal code for site sampled. 50 state postal codes plus AS, MP, GU, PR, VI for American Samoa, Commonwealth of Northern Marianas, Guam, Puerto Rico and Virgin Islands.  No missing values allowed."	NA	NA
+SITE_ID	"The NLA Site ID  for the study and year sampled.  Preferred form is NLAnn_MM-xxxxx  where  nn is current cycle year (07, 12, 17, etc), MM is two letter state code, and xxxxx is between 10001 and 99999. No missing values allowed."	NA	NA
+TNT_CAT	NLA target status assigned based on lake evaluation for use in national assessments	Target|Non_Target|None	NA
+URBN_NLA07	Lake identified as an urban lake using 2007 definition of Urban. No missing or blank values allowed	Urban|Non-Urban|	NA
+URBN_NLA17	Lake identified as an urban lake using 2017 definition of Urban. No missing or blank values allowed	Urban|Non-Urban|	NA
+WGT_TP	NLA adjusted weight for lake when want estimates to be for the Target Population. Includes weight adjustments to account for sites with unknow status and when lake status is known to be target but not sampled. Note: >0 or 0 if site is not to be used for target population estimation	NA	NA
+XCOORD	x-coordinate from US Contiguous Albers Equal Area Conic projection EXCEPT Hawaii or Alaska lakes which are calculated from Hawaii or Alaska Albers Equal Area Conic projectionNo missing values allowed.	NA	NA
+YCOORD	y-coordinate from US Contiguous Albers Equal Area Conic projection EXCEPT Hawaii or Alaska lakes which are calculated from Hawaii or Alaska Albers Equal Area Conic projection. No missing values allowed.	NA	NA
+YEAR	Year site was evaluated that determined the evaluation status (IND_GROUP = EXTENT) for the lake  within a DSGN_CYCLE of a STUDY. 	NA	NA
+VISIT_NO	Sequential number of visit to site	|1|2	NA
+MMI_ZOOP_2017	Zooplankton MMI score based on 2017 revision and tow volume corrections.	NA	NA
+DO_SURF	Mean DO in upper 2 m	NA	mg/L
