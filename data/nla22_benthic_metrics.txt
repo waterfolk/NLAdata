@@ -1,0 +1,133 @@
+COLUMN_NAME	LABEL	LEGAL_VALUES
+AMPHNTAX	No. of Amphipoda taxa	
+AMPHPIND	% Amphipoda individuals	
+AMPHPTAX	% Amphipoda taxa	
+BURRNTAX	No. of Burrowers taxa	
+BURRPIND	% Burrowers individuals	
+BURRPTAX	% Burrowers taxa	
+CHIRDOM1PIND	% individuals in most abundant distinct Chironomidae taxon	
+CHIRDOM3PIND	% individuals in most abundant 3 distinct Chironomidae taxa	
+CHIRDOM5PIND	% individuals in most abundant 5 distinct Chironomidae taxa	
+CHIRNTAX	No. of Chironomidae taxa	
+CHIRPIND	% Chironomidae individuals	
+CHIRPTAX	% Chironomidae taxa	
+CLMBNTAX	No. of Climbers taxa	
+CLMBPIND	% Climbers individuals	
+CLMBPTAX	% Climbers taxa	
+CLNGNTAX	No. of Clingers taxa	
+CLNGPIND	% Clingers individuals	
+CLNGPTAX	% Clingers taxa	
+COFINTAX	No. of Collecter-filterer taxa	
+COFIPIND	% Collecter-filterer individuals	
+COFIPTAX	% Collecter-filterer taxa	
+COFITRICNTAX	No. of Collector-filterer Trichoptera taxa	
+COFITRICPIND	% Collector-filterer Trichoptera individuals	
+COFITRICPTAX	% Collector-filterer Trichoptera taxa	
+COGANTAX	No. of Collecter-gatherer taxa	
+COGAPIND	% Collecter-gatherer individuals	
+COGAPTAX	% Collecter-gatherer taxa	
+CRUSNTAX	No. of Crustaceans taxa	
+CRUSPIND	% Crustaceans individuals	
+CRUSPTAX	% Crustaceans taxa	
+DIPTNTAX	No. of Diptera taxa	
+DIPTPIND	% Diptera individuals	
+DIPTPTAX	% Diptera taxa	
+DOM1PIND	% individuals in dominant distinct taxon	
+DOM3PIND	% individuals in dominant 3 distinct taxa	
+DOM5PIND	% individuals in dominant 5 distinct taxa	
+EPHENTAX	No. of Ephemeroptera taxa	
+EPHEPIND	% Ephemeroptera individuals	
+EPHEPTAX	% Ephemeroptera taxa	
+EPOTNTAX	"No. of Ephemeroptera, Plecoptera, Odonata, & Trichoptera taxa"	
+EPOTPIND	"% Ephemeroptera, Plecoptera, Odonata, & Trichoptera individuals"	
+EPOTPTAX	"% Ephemeroptera, Plecoptera, Odonata, & Trichoptera taxa"	
+EPT_NTAX	No. of EPT taxa	
+EPT_PIND	% EPT individuals	
+EPT_PTAX	% EPT taxa	
+FACLNTAX	No. of Facultative (3< PTV <7) taxa	
+FACLPIND	% Facultative (3< PTV <7) individuals	
+FACLPTAX	% Facultative (3< PTV <7) taxa	
+HEMINTAX	No. of Hemiptera taxa	
+HEMIPIND	% Hemiptera individuals	
+HEMIPTAX	% Hemiptera taxa	
+HPRIME	"Shannon diversity- sum of prop_i*ln(prop_i) based only on distinct taxa, where prop_i=proportion of species i in sample"	
+INTLNTAX	No. of Intolerant (PTV<=3) taxa	
+INTLPIND	% Intolerant (PTV<=3) individuals	
+INTLPTAX	% Intolerant (PTV<=3) taxa	
+MITENTAX	No. of Mite taxa	
+MITEPIND	% Mite individuals	
+MITEPTAX	% Mite taxa	
+MOLLNTAX	No. of Mollusca taxa	
+MOLLPIND	% Mollusca individuals	
+MOLLPTAX	% Mollusca taxa	
+NOINNTAX	No. of Non-insects taxa	
+NOINPIND	% Non-insects individuals	
+NOINPTAX	% Non-insects taxa	
+NTOLNTAX	No. of non-tolerants (PTV<6) taxa	
+NTOLPIND	% non-tolerants (PTV<6) individuals	
+NTOLPTAX	% non-tolerants (PTV<6) taxa	
+ODONNTAX	No. of Odonata taxa	
+ODONPIND	% Odonata individuals	
+ODONPTAX	% Odonata taxa	
+OLLENTAX	No. of Oligochaete and leech taxa	
+OLLEPIND	% Oligochaete and leech individuals	
+OLLEPTAX	% Oligochaete and leech taxa	
+ORTHCHIRPIND	% Chironomidae individuals in Orthocladiinae	
+ORTHNTAX	No. of Orthocladiinae chironomid taxa	
+ORTHPIND	% Orthocladiinae chironomid individuals	
+ORTHPTAX	% Orthocladiinae chironomid taxa	
+PLECNTAX	No. of Plecoptera taxa	
+PLECPIND	% Plecoptera individuals	
+PLECPTAX	% Plecoptera taxa	
+PREDNTAX	No. of Predators taxa	
+PREDPIND	% Predators individuals	
+PREDPTAX	% Predators taxa	
+SCRPNTAX	No. of Scrapers taxa	
+SCRPPIND	% Scrapers individuals	
+SCRPPTAX	% Scrapers taxa	
+SHRDNTAX	No. of Shredders taxa	
+SHRDPIND	% Shredders individuals	
+SHRDPTAX	% Shredders taxa	
+SPWLNTAX	No. of Sprawlers taxa	
+SPWLPIND	% Sprawlers individuals	
+SPWLPTAX	% Sprawlers taxa	
+STOLNTAX	No. of taxa with PTV>=8	
+STOLPIND	% Individuals with PTV>=8	
+STOLPTAX	% taxa with PTV>=8	
+SWIMNTAX	No. of Swimmers taxa	
+SWIMPIND	% Swimmers individuals	
+SWIMPTAX	% Swimmers taxa	
+TANYNTAX	No. of Tanytarsini taxa	
+TANYPIND	% Tanytarsini individuals	
+TANYPTAX	% Tanytarsini taxa	
+TL01NTAX	No. of taxa with PTV<2	
+TL01PIND	% Individuals with PTV <2	
+TL01PTAX	% taxa with PTV<2	
+TL23NTAX	No. taxa with PTV >=2 & <4	
+TL23PIND	% individuals with PTV >=2 & <4	
+TL23PTAX	% taxa with PTV>=2 & <4	
+TL45NTAX	No. taxa with PTV >=4 & <6	
+TL45PIND	% individuals with PTV >=4 & <6	
+TL45PTAX	% taxa with PTV>=4 & <6	
+TL67NTAX	No. taxa with PTV >=6 & <8	
+TL67PIND	% individuals with PTV >=6 & <8	
+TL67PTAX	% taxa with PTV>=6 & <8	
+TOLRNTAX	No. of Tolerant (PTV>=7) taxa	
+TOLRPIND	% Tolerant (PTV>=7) individuals	
+TOLRPTAX	% Tolerant (PTV>=7) taxa	
+TOTLNIND	Number of individuals in sample	
+TOTLNTAX	Number of distinct taxa in sample	
+TRICNTAX	No. of Trichoptera taxa	
+TRICPIND	% Trichoptera individuals	
+TRICPTAX	% Trichoptera taxa	
+TUBINAIDNTAX	No. of Tubificidae and Naididae taxa	
+TUBINAIDPIND	% Tubificidae and Naididae individuals	
+TUBINAIDPTAX	% Tubificidae and Naididae taxa	
+WTD_TV	"Hilsenhoff Biotic Index (HBI), sum of TV_i*prop_i, where TV_i=tolerance value for species i and prop_i=proportion of taxon i in sample, based on all taxa in sample"	
+PSTL_CODE	"State two letter postal code for site sampled. 50 state postal codes plus AS, MP, GU, PR, VI for American Samoa, Commonwealth of Northern Marianas, Guam, Puerto Rico and Virgin Islands.  No missing values allowed."	
+SITE_ID	"The NLA Site ID  for the study and year sampled.  Preferred form is NLAnn_MM-xxxxx  where  nn is current cycle year (07, 12, 17, etc), MM is two letter state code, and xxxxx is between 10001 and 99999. No missing values allowed."	
+UNIQUE_ID	"Unique site ID based on location that does not depend on year sampled or any other factor.  Form is NLA_ss_nnnnn  where ss state and nnnnn is number that starts at 10001.   No missing or \blank\"" values allowed."""	
+DATE_COL	Date of sample collection	
+VISIT_NO	Sequential number of visit to site	|1|2
+PUBLICATION_DATE	Date the dataset was published to the NARS site	
+UID	Unique identifier for the site/visit	

@@ -1,0 +1,195 @@
+COLUMN_NAME	LABEL	LEGAL_VALUES
+AM_EMERGENT	"Emergent aquatic macrophytes (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+AM_FLOATING	"Floating aquatic macrophytes (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+AM_SUBMERGENT	"Submergent aquatic macrophytes (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+AM_TOTALCOVER	"Total cover aquatic macrophytes (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+ANGLE	Bank angle	|FLAT|GRADUAL|STEEP|NEAR_VERTICAL_UNDERCUT
+BS_BEDROCK	"Bottom substrate bedrock (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+BS_BOULDERS	"Bottom substrate boulders (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+BS_COBBLE	"Bottom substrate cobble (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+BS_COLOR	Bottom substrate color	|BLACK|GRAY|BROWN|RED|OTHER.*
+BS_GRAVEL	"Bottom substrate gravel (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+BS_ORGANIC	"Bottom substrate organic (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+BS_OTHER	percent cover by other	|0|1|2|3|4
+BS_SAND	"Bottom substrate sand (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+BS_SILT	"Bottom substrate silt (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+BS_WOOD	"Bottom substrate woody debris (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+C_BIGTREES	"Canopy big trees (Trunk > 0.3 DBH)(0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+C_BIGTREES_DD	percent cover by Canopy big trees (Trunk > 0.3 DBH) in the draw down zone	|0|1|2|3|4
+C_SMALLTREES	"Canopy small trees (Trunk < 0.3 DBH)(0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+C_SMALLTREES_DD	percent cover by canopy small trees (Trunk < 0.3 DBH) in the draw down zone	|0|1|2|3|4
+CANOPY	Canopy type	|C|D|E|M|N
+CANOPY_DD	Canopy type in the draw down zone	|C|D|E|M|N
+DEPTH_AT_STATION	Depth at station 10m off shore	
+DRAWDOWN	Station dropped or relocated (X/blank)	|Y|N|YES|NO
+DROPPED	Drawdown?	|YES|NO|Y|N
+FC_AQUATIC	"Fish cover aquatic vegetation (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+FC_AQUATIC_DD	percent fish cover by aquatic veg in the drawdown zone	|0|1|2|3|4
+FC_BOULDERS	"Fish cover boulders (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+FC_BOULDERS_DD	percent fish cover by boulders in the drawdown zone	|0|1|2|3|4
+FC_BRUSH	"Fish cover brush (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+FC_BRUSH_DD	percent fish cover by brush in the drawdown zone	|0|1|2|3|4
+FC_LEDGES	"Fish cover ledges (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+FC_LEDGES_DD	percent fish cover by ledges in the drawdown zone	|0|1|2|3|4
+FC_LIVETREES	"Fish cover live trees (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+FC_LIVETREES_DD	percent fish cover by live trees in the drawdown zone	|0|1|2|3|4
+FC_OVERHANG	"Fish cover overhanging vegetation (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+FC_OVERHANG_DD	percent fish cover by overhanging veg in the drawdown zone	|0|1|2|3|4
+FC_SNAGS	"Fish cover woody debris/snags (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+FC_SNAGS_DD	percent fish cover by snags in the drawdown zone	|0|1|2|3|4
+FC_STRUCTURES	"Fish cover human structures (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+FC_STRUCTURES_DD	percent fish cover by human structures in the drawdown zone	|0|1|2|3|4
+GC_BARE	"Ground cover bare (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+GC_BARE_DD	percent ground uncovered in the drawdown zone	|0|1|2|3|4
+GC_INUNDATED	"Ground cover inundated vegetation (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+GC_INUNDATED_DD	percent ground cover by inundation in the drawdown zone	|0|1|2|3|4
+GC_NONWOODY	"Ground cover nonwoody (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+GC_NONWOODY_DD	percent ground cover by nonwoody veg in the drawdown zone	|0|1|2|3|4
+GC_WOODY	"Ground cover woody (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+GC_WOODY_DD	percent ground cover by woody veg in the drawdown zone	|0|1|2|3|4
+HI_BUILDINGS	Human influence buildings (O=non present/P=present outside plot/C=present w/i plot)	|0|P|C
+HI_BUILDINGS_DD	Human influence by buildings in the drawdown zone	|0|P|C
+HI_COMMERCIAL	Human influence commercial(O=non present/P=present outside plot/C=present w/i plot)	|0|P|C
+HI_COMMERCIAL_DD	Human influence by commercial use in the drawdown zone	|0|P|C
+HI_CROPS	Human influence row crops (O=non present/P=present outside plot/C=present w/i plot)	|0|P|C
+HI_CROPS_DD	Human influence by row crops in the drawdown zone	|0|P|C
+HI_DOCKS	Human influence docks(O=non present/P=present outside plot/C=present w/i plot)	|0|P|C
+HI_DOCKS_DD	Human influence by docks in the drawdown zone	|0|P|C
+HI_LANDFILL	Human influence landfill(O=non present/P=present outside plot/C=present w/i plot)	|0|P|C
+HI_LANDFILL_DD	Human influence by landfill in the drawdown zone	|0|P|C
+HI_LAWN	Human influence lawn (O=non present/P=present outside plot/C=present w/i plot)	|0|P|C
+HI_LAWN_DD	Human influence by lawn in the drawdown zone	|0|P|C
+HI_ORCHARD	Human influence orchard (O=non present/P=present outside plot/C=present w/i plot)	|0|P|C
+HI_ORCHARD_DD	Human influence by orchards in the drawdown zone	|0|P|C
+HI_OTHER	Human influence other (O=non present/P=present outside plot/C=present w/i plot)	|0|P|C
+HI_OTHER_DD	Human influence by other in the drawdown zone	|0|P|C
+HI_PARK	Human influence park facilities (O=non present/P=present outside plot/C=present w/i plot)	|0|P|C
+HI_PARK_DD	Human influence by park in the drawdown zone	|0|P|C
+HI_PASTURE	Human influence pasture (O=non present/P=present outside plot/C=present w/i plot)	|0|P|C
+HI_PASTURE_DD	Human influence by pasture in the drawdown zone	|0|P|C
+HI_POWERLINES	Human influence powerlines(O=non present/P=present outside plot/C=present w/i plot)	|0|P|C
+HI_POWERLINES_DD	Human influence by powerlines in the drawdown zone	|0|P|C
+HI_ROADS	Human influence roads (O=non present/P=present outside plot/C=present w/i plot)	|0|P|C
+HI_ROADS_DD	Human influence by roads in the drawdown zone	|0|P|C
+HI_WALLS	Human influence walls (O=non present/P=present outside plot/C=present w/i plot)	|0|P|C
+HI_WALLS_DD	Human influence by walls in the drawdown zone	|0|P|C
+HORIZ_DIST	Horizontal distance from waterline to high water mark (m)	
+HORIZ_DIST_DD	Horizontal distance from waterline to high water mark	
+ISLAND	Station an island (X/blank)	|Y|N|YES|NO
+LATITUDE	Latitude at station	
+LONGITUDE	Longitude at station	
+MACRO_LAKEWARD	Do macrophytes extend lakeward (Y/N)	|Y|N
+ODOR	Odor Type	|NONE|H2S|ANOXIC|OIL|CHEMICAL|OTHER.*
+SHORELINE_FLOODING	Presence of Shoreling flooding	|Y|N|YES|NO
+SS_BEDROCK	percent cover by bedrock on shore 1-M zone	|0|1|2|3|4
+SS_BOULDERS	percent cover by boulders on shore 1-M zone	|0|1|2|3|4
+SS_COBBLE	percent cover by cobble on shore 1-M zone	|0|1|2|3|4
+SS_GRAVEL	percent cover by gravel on shore 1-M zone	|0|1|2|3|4
+SS_ORGANIC	percent cover by organic on shore 1-M zone	|0|1|2|3|4
+SS_OTHER	percent cover by other on shore 1-M zone	|0|1|2|3|4
+SS_SAND	percent cover by sand on shore 1-M zone	|0|1|2|3|4
+SS_SILT	percent cover by silt on shore 1-M zone	|0|1|2|3|4
+SS_WOOD	percent cover by woody on shore 1-M zone	|0|1|2|3|4
+STATION	"Station ID: ALL - if applies across station or station does not apply, A-L - applies to individual station"	|A|B|C|D|E|F|G|H|I|J|K|L
+STATION_RELOCATED	Station relocated (Y/blank)	|Y|N|YES|NO
+SUBMIT_STATION		|Y
+SURFACE_FILM	Surface film type	|NONE|SCUM|ALGAL_MAT|OILY|OTHER.*
+U_NONWOODY	"Understory - nonwoody (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+U_NONWOODY_DD	percent understory cover by nonwoody veg in the drawdown zone	|0|1|2|3|4
+U_WOODY	"Understory woody (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	|0|1|2|3|4
+U_WOODY_DD	percent understory cover by woody veg in the drawdown zone	|0|1|2|3|4
+UNDERSTORY	Understory type	|C|D|E|M|N
+UNDERSTORY_DD	Understory type in the draw down zone	|C|D|E|M|N
+VERT_HEIGHT	Vertical height from waterline to high water mark (m)	
+VERT_HEIGHT_DD	Vertical height from waterline to high water mark	
+PSTL_CODE	"State two letter postal code for site sampled. 50 state postal codes plus AS, MP, GU, PR, VI for American Samoa, Commonwealth of Northern Marianas, Guam, Puerto Rico and Virgin Islands.  No missing values allowed."	
+SITE_ID	"The NLA Site ID  for the study and year sampled.  Preferred form is NLAnn_MM-xxxxx  where  nn is current cycle year (07, 12, 17, etc), MM is two letter state code, and xxxxx is between 10001 and 99999. No missing values allowed."	
+UNIQUE_ID	"Unique site ID based on location that does not depend on year sampled or any other factor.  Form is NLA_ss_nnnnn  where ss state and nnnnn is number that starts at 10001.   No missing or \blank\"" values allowed."""	
+DATE_COL	Date of sample collection	
+REVIEW	Has app form been thoroughly reviewed	|Y
+VISIT_NO	Sequential number of visit to site	|1|2
+PUBLICATION_DATE	Date the dataset was published to the NARS site	
+UID	Unique identifier for the site/visit	
+NARS_COMMENT	"Comment explaining NARS_FLAG or other qualifying information, if applicable."	
+NARS_FLAG	"Flag assigned by NARS: ND = Non-detect, L = Estimated, Q = Quality-related issue, S = Shipping time exceedence, H = Holding time exceedence, NR = No lab result for analyte"	
+AM_EMERGENT_COMMENT	"Comment for Emergent aquatic macrophytes (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+AM_FLOATING_COMMENT	"Comment for Floating aquatic macrophytes (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+AM_SUBMERGENT_COMMENT	"Comment for Submergent aquatic macrophytes (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+AM_TOTALCOVER_COMMENT	"Comment for Total cover aquatic macrophytes (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+BS_BEDROCK_COMMENT	"Comment for Bottom substrate bedrock (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+BS_BOULDERS_COMMENT	"Comment for Bottom substrate boulders (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+BS_COBBLE_COMMENT	"Comment for Bottom substrate cobble (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+BS_GRAVEL_COMMENT	"Comment for Bottom substrate gravel (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+BS_ORGANIC_COMMENT	"Comment for Bottom substrate organic (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+BS_OTHER_COMMENT	Comment for percent cover by other	
+BS_SAND_COMMENT	"Comment for Bottom substrate sand (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+BS_SILT_COMMENT	"Comment for Bottom substrate silt (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+BS_WOOD_COMMENT	"Comment for Bottom substrate woody debris (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+C_BIGTREES_COMMENT	"Comment for Canopy big trees (Trunk > 0.3 DBH)(0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+C_BIGTREES_DD_COMMENT	Comment for percent cover by Canopy big trees (Trunk > 0.3 DBH) in the draw down zone	
+C_SMALLTREES_COMMENT	"Comment for Canopy small trees (Trunk < 0.3 DBH)(0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+C_SMALLTREES_DD_COMMENT	Comment for percent cover by canopy small trees (Trunk < 0.3 DBH) in the draw down zone	
+DROPPED_COMMENT	Comment for Drawdown?	
+FC_AQUATIC_COMMENT	"Comment for Fish cover aquatic vegetation (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+FC_AQUATIC_DD_COMMENT	Comment for percent fish cover by aquatic veg in the drawdown zone	
+FC_BOULDERS_COMMENT	"Comment for Fish cover boulders (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+FC_BOULDERS_DD_COMMENT	Comment for percent fish cover by boulders in the drawdown zone	
+FC_BRUSH_COMMENT	"Comment for Fish cover brush (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+FC_BRUSH_DD_COMMENT	Comment for percent fish cover by brush in the drawdown zone	
+FC_LEDGES_COMMENT	"Comment for Fish cover ledges (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+FC_LEDGES_DD_COMMENT	Comment for percent fish cover by ledges in the drawdown zone	
+FC_LIVETREES_COMMENT	"Comment for Fish cover live trees (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+FC_LIVETREES_DD_COMMENT	Comment for percent fish cover by live trees in the drawdown zone	
+FC_OVERHANG_COMMENT	"Comment for Fish cover overhanging vegetation (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+FC_OVERHANG_DD_COMMENT	Comment for percent fish cover by overhanging veg in the drawdown zone	
+FC_SNAGS_COMMENT	"Comment for Fish cover woody debris/snags (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+FC_SNAGS_DD_COMMENT	Comment for percent fish cover by snags in the drawdown zone	
+FC_STRUCTURES_COMMENT	"Comment for Fish cover human structures (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+FC_STRUCTURES_DD_COMMENT	Comment for percent fish cover by human structures in the drawdown zone	
+GC_BARE_COMMENT	"Comment for Ground cover bare (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+GC_BARE_DD_COMMENT	Comment for percent ground uncovered in the drawdown zone	
+GC_INUNDATED_COMMENT	"Comment for Ground cover inundated vegetation (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+GC_INUNDATED_DD_COMMENT	Comment for percent ground cover by inundation in the drawdown zone	
+GC_NONWOODY_COMMENT	"Comment for Ground cover nonwoody (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+GC_NONWOODY_DD_COMMENT	Comment for percent ground cover by nonwoody veg in the drawdown zone	
+GC_WOODY_COMMENT	"Comment for Ground cover woody (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+GC_WOODY_DD_COMMENT	Comment for percent ground cover by woody veg in the drawdown zone	
+HI_BUILDINGS_COMMENT	Comment for Human influence buildings (O=non present/P=present outside plot/C=present w/i plot)	
+HI_BUILDINGS_DD_COMMENT	Comment for Human influence by buildings in the drawdown zone	
+HI_COMMERCIAL_COMMENT	Comment for Human influence commercial(O=non present/P=present outside plot/C=present w/i plot)	
+HI_COMMERCIAL_DD_COMMENT	Comment for Human influence by commercial use in the drawdown zone	
+HI_CROPS_COMMENT	Comment for Human influence row crops (O=non present/P=present outside plot/C=present w/i plot)	
+HI_CROPS_DD_COMMENT	Comment for Human influence by row crops in the drawdown zone	
+HI_DOCKS_COMMENT	Comment for Human influence docks(O=non present/P=present outside plot/C=present w/i plot)	
+HI_DOCKS_DD_COMMENT	Comment for Human influence by docks in the drawdown zone	
+HI_LANDFILL_COMMENT	Comment for Human influence landfill(O=non present/P=present outside plot/C=present w/i plot)	
+HI_LANDFILL_DD_COMMENT	Comment for Human influence by landfill in the drawdown zone	
+HI_LAWN_COMMENT	Comment for Human influence lawn (O=non present/P=present outside plot/C=present w/i plot)	
+HI_LAWN_DD_COMMENT	Comment for Human influence by lawn in the drawdown zone	
+HI_ORCHARD_COMMENT	Comment for Human influence orchard (O=non present/P=present outside plot/C=present w/i plot)	
+HI_ORCHARD_DD_COMMENT	Comment for Human influence by orchards in the drawdown zone	
+HI_OTHER_COMMENT	Comment for Human influence other (O=non present/P=present outside plot/C=present w/i plot)	
+HI_OTHER_DD_COMMENT	Comment for Human influence by other in the drawdown zone	
+HI_PARK_COMMENT	Comment for Human influence park facilities (O=non present/P=present outside plot/C=present w/i plot)	
+HI_PARK_DD_COMMENT	Comment for Human influence by park in the drawdown zone	
+HI_PASTURE_COMMENT	Comment for Human influence pasture (O=non present/P=present outside plot/C=present w/i plot)	
+HI_PASTURE_DD_COMMENT	Comment for Human influence by pasture in the drawdown zone	
+HI_POWERLINES_COMMENT	Comment for Human influence powerlines(O=non present/P=present outside plot/C=present w/i plot)	
+HI_POWERLINES_DD_COMMENT	Comment for Human influence by powerlines in the drawdown zone	
+HI_ROADS_COMMENT	Comment for Human influence roads (O=non present/P=present outside plot/C=present w/i plot)	
+HI_ROADS_DD_COMMENT	Comment for Human influence by roads in the drawdown zone	
+HI_WALLS_COMMENT	Comment for Human influence walls (O=non present/P=present outside plot/C=present w/i plot)	
+HI_WALLS_DD_COMMENT	Comment for Human influence by walls in the drawdown zone	
+SS_BEDROCK_COMMENT	Comment for percent cover by bedrock on shore 1-M zone	
+SS_BOULDERS_COMMENT	Comment for percent cover by boulders on shore 1-M zone	
+SS_COBBLE_COMMENT	Comment for percent cover by cobble on shore 1-M zone	
+SS_GRAVEL_COMMENT	Comment for percent cover by gravel on shore 1-M zone	
+SS_ORGANIC_COMMENT	Comment for percent cover by organic on shore 1-M zone	
+SS_OTHER_COMMENT	Comment for percent cover by other on shore 1-M zone	
+SS_SAND_COMMENT	Comment for percent cover by sand on shore 1-M zone	
+SS_SILT_COMMENT	Comment for percent cover by silt on shore 1-M zone	
+SS_WOOD_COMMENT	Comment for percent cover by woody on shore 1-M zone	
+U_NONWOODY_COMMENT	"Comment for Understory - nonwoody (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+U_NONWOODY_DD_COMMENT	Comment for percent understory cover by nonwoody veg in the drawdown zone	
+U_WOODY_COMMENT	"Comment for Understory woody (0=0%, 1=<10%, 2=10-40%, 3=40-75%, 4=>75%)"	
+U_WOODY_DD_COMMENT	Comment for percent understory cover by woody veg in the drawdown zone	

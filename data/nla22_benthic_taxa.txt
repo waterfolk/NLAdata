@@ -1,0 +1,16 @@
+COLUMN_NAME	LABEL	LEGAL_VALUES
+PUBLICATION_DATE	Date the dataset was published to the NARS site	
+TAXA_ID	NLA Taxon ID number	
+TARGET_TAXON	Name of taxon at target taxon level	
+PHYLUM	Phylum of taxon	
+CLASS	Class of taxon	
+ORDER	Order of taxon	
+FAMILY	Family of taxon	
+SUBFAMILY	Subfamily of taxon	
+TRIBE	Tribe of taxon	
+GENUS	Genus of taxon	
+FFG	"Functional feeding group for macroinvertebrates, codes separated by commas if more than one"	CF|CG|PI|PR|SC|SH
+HABIT	Habit designation for macroinvertebrates	BU|CB|CN|DV|PK|SK|SP|SW
+PTV	Pollution tolerance value for macroinvertebrate taxon	
+NON_TARGET	Macroinvertebrate designation for non-target taxon	N|Y
+ITISTSN	ITIS taxonomic serial number	

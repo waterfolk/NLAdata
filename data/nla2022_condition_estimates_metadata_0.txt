@@ -1,0 +1,46 @@
+Data Type	Name	Description	Category	Notes
+Column Header	Study_Population	Polulation of lakes	All_Lakes | Large_Lakes	See'Study_Population' descriptions below
+Column Header	Type	Population estimate groups 	National|Lake_Origin|Misissippi_River_Basin|EPA_Region|AG_ECO3 | AG_ECO9	See 'Population estimate group' descriptions below
+Column Header	Subpopulation	Subpopulation estimate groups (subsets of the Type)	CPL | EHIGH | MAN_MADE | MISSISSIPPI_BASIN |NAP | National | NATURAL | NOT_MISSISSIPPI_BASIN | NPL | PLNLOW | Region_01 | Region_02 | Region_03 | Region_04 | Region_05 | Region_06 | Region_07 | Region_08 | Region_09 | Region_10 | SAP | SPL | TPL | UMW | WMT | WMTNS | XER	
+Column Header	Indicator	Indicator assessed	ACID_COND | DIS_O2_CLS | PTL_COND | NTL_COND | CHLA_COND | TROPHIC_STATE |ATZ_EPA_COND_3.4 | ATZ_DETECT | CYLSPER_EPA_COND|CYLSPER_DETECT | MICX_EPA_COND | MICX_DETECT | ECOLI_EPA_COND | ECOLI_DETECT | BENT_MMI_COND_2017 | ZOOP_MMI_COND_2017 | DRAWDOWN_COND_2CAT_2017 | LITRIPCVR_COND|LITCVR_COND | RVEG_COND | RDIS_COND | NLA_SCI_STATUS|	See 'Indicator' descritpions below
+Column Header	Category	"Condition category (e.g., good, fair, poor)"	Above Benchmark | At or Below Benchmark |Detected | Eutrophic | Fair | Good | High (>= 5 ppm) | Hypereutrophic | Large | Least Disturbed | Low (<= 3 ppm) | Medium | Mesotrophic | Moderate (> 3 - < 5 ppm) | Not Assessed | Not Detected | Not Large | Oligotrophic | Poor | Small	See NLA 2022 Technical Support Document for more details
+Column Header	NResp	"Number of ""responses""/sites in the category from the National Lakes Assessment 2022"	NA	
+Column Header	Estimate.P	"National Lakes Assessment 2022 population estimate - proportion of lakes (e.g., percent)"	NA	
+Column Header	StdError.P	Standard error for the population estimate based on percentages. Multiply by 1.968 to develop upper and lower confidence limits.	NA	
+Column Header	LCB95Pct.P	Error Bar for condition  assessment  based on percentages-- Lower confidence bound at 95%	NA	
+Column Header	UCB95Pct.P	Error Bar for condition assessment  based on percentages--Upper confidence bound at 95%	NA	
+Column Header	Estimate.U	"Population Estimate, based on number of lakes for National Lakes Assessment 2022 data"	NA	
+Column Header	StdError.U	Standard error for the population estimate  based on number of lakes	NA	
+Column Header	LCB95Pct.U	Error Bar for condition assessment  based on  based on number of lakes -- Lower confidence bound at 95%	NA	
+Column Header	UCB95Pct.U	Error Bar for condition assessment  based on  based on number of lakes --Upper confidence bound at 95%	NA	
+Column Header	MarginofError.P	margin of error of proportion estimate 	NA	
+Column Header	MarginofError.U	margin of error of total estimate	NA	
+Indicator 	ACID_COND	Acidity condition class	NA	
+Indicator 	ATZ_DETECT	Atrazine Detection	NA	
+Indicator 	ATZ_EPA_COND_3.4	Condition based on Atrazine concentration and 3.4 ppb benchmark	NA	
+Indicator 	BENT_MMI_COND_2017	Condition class based on 2017 updated benthic MMI scores	NA	
+Indicator 	CHLA_COND	"Condition for Chlorophyll a indicator, based on CHLX"	NA	
+Indicator 	CYLSPER_DETECT	Cylindrospermopsin Detection	NA	
+Indicator 	CYLSPER_EPA_COND	Cylindrospermopsin condition based on EPA benchmark	NA	
+Indicator 	DIS_O2_CLS	Dissolved oxygen condition class	NA	
+Indicator 	DRAWDOWN_COND	Drawdown condition	NA	
+Indicator 	DRAWDOWN_COND_2CAT_2017	"Drawdown condition, specifially for 2017 survey"	NA	
+Indicator 	ENT_1X_STV_COND	Enterococci condition based on EPA benchmark	NA	
+Indicator 	LITCVR_COND	Shallow water habitat condition class	NA	
+Indicator 	LITRIPCVR_COND	Lake habitat complexity condition class	NA	
+Indicator 	MICX_DETECT	Microcystin Detection	NA	
+Indicator 	MICX_EPA_COND	Microcystin condition based on EPA benchmark	NA	
+Indicator 	NTL_COND	Condition class based on total nitrogen	NA	
+Indicator 	PTL_COND	Condition class based on total phosphorus	NA	
+Indicator 	RDIS_COND	Lakeshore disturbance condition class	NA	
+Indicator 	RVEG_COND	Riparian vegetation condition class	NA	
+Indicator 	TROPHIC_STATE	Trophic state (Oligotrophic/Mesotrophic/Eutrophic/Hypereutrophic)	NA	
+Indicator 	ZOOP_MMI_COND_2017	Condition class based on 2017 updated zooplankton MMI scores (following tow volume corrections)	NA	
+Population estimate groups 	AG_ECO3	"NARS 3-level reporting region (2015), based on aggregating AGGR_ECO9_2015 reporting regions.  No missing values allowed."	EHIGH|PLNLOW|WMTNS|	
+Population estimate groups 	AG_ECO9	"NARS 9-level reporting region (2015), based on aggregated Omernik Level III ecoregions.  No missing values allowed."	CPL|NAP|NPL|SAP|SPL|TPL|UMW|WMT|XER|	
+Population estimate groups 	EPA_Region	EPA Region.  No missing values allowed.	Region_01|Region_02|Region_03|Region_04|Region_05|Region_06|Region_07|Region_08|Region_09|Region_10|	
+Population estimate groups 	Lake_Origin	"Lake origin, based on evaluation on map or in field"	MAN_MADE|NATURAL|UNCERTAIN|UNKNOWN	
+Population estimate groups 	Misissippi_River_Basin	"Within Mississippi Basin or outside, based on MAJ_BAS_NM values"	MISSISSIPPI_BASIN|NOT_MISSISSIPPI_BASIN	
+Population estimate groups 	National	Conterminous United States	NA	
+Study Population	Large_Lakes	Lakes greater than or equal to 4 hectacres (ha) in surface area		
+Study Population	All_Lakes	Lakes greater than or equal to 1 hectacre (ha) in surface area		
