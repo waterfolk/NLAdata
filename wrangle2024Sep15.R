@@ -378,7 +378,7 @@ for (i in 1:length(key[,1])){
   assign(objformati,data.frame(dataformati))
 }
 
-
+########## Begin re-wrangling of stubborn data objects ############
 
 #nla2012_waterchem_wide
 
@@ -515,7 +515,7 @@ stubborndf<-data.frame(year="2022",file="nla22_waterchem_wide",
                        uid,site_id,date_col,units,
                        var,depth,result)
 
-uidsiteidkey<-merge(nla2012_wide_siteinfo_08232016 %>% select(uid,site_id),stubborndf %>% select(uid),by="uid") %>% unique()
+uidsiteidkey<-merge(nla22_siteinfo %>% select(uid,site_id),stubborndf %>% select(uid),by="uid") %>% unique()
 
 merged<-merge(uidsiteidkey,stubborndf %>% select(-site_id),by=c("uid"),all=TRUE)
 dataformati<-merged %>% select(year,file,uid,site_id,date_col,units,var,depth,result) %>% arrange(var,site_id)
