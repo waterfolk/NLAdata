@@ -474,6 +474,53 @@ dataformati<-merged %>% select(year,file,uid,site_id,date_col,units,var,depth,re
 objformati<-paste("format_","nla2012_chla_wide",sep="")
 assign(objformati,data.frame(dataformati))
 
+########################################################################################
+#nla2022_waterchem_wide
+
+result_names<-names(nla22_waterchem_wide)[grep("result",names(nla22_waterchem_wide))]
+units_names<-names(nla22_waterchem_wide)[grep("units",names(nla22_waterchem_wide))]
+
+year<-c()
+file<-c()
+uid<-c()
+site_id<-c()
+date_col<-c()
+units<-c()
+var<-c()
+depth<-c()
+result<-c()
+
+datastubborn<-nla22_waterchem_wide
+for(i in 1:length(result_names)){
+  #for(i in 1:2){
+  uidi<-datastubborn$uid
+  site_idi<-datastubborn$site_id
+  date_coli<-datastubborn$date_col
+  unitsi<-datastubborn[,which(names(datastubborn)==units_names[i])]
+  unitsi<-sort(unitsi,decreasing=TRUE)[1]
+  unitsi<-rep(unitsi,length(uidi))
+  vari<-gsub("_units","",units_names)[i]
+  vari<-rep(vari,length(uidi))
+  depthi<-""
+  resulti<-datastubborn[,which(names(datastubborn)==result_names[i])]
+  uid<-c(uid,uidi)
+  site_id<-c(site_id,site_idi)
+  date_col<-c(date_col,date_coli)
+  units<-c(units,unitsi)
+  var<-c(var,vari)
+  depth<-c(depth,depthi)
+  result<-c(result,resulti)
+}
+stubborndf<-data.frame(year="2022",file="nla22_waterchem_wide",
+                       uid,site_id,date_col,units,
+                       var,depth,result)
+
+uidsiteidkey<-merge(nla2012_wide_siteinfo_08232016 %>% select(uid,site_id),stubborndf %>% select(uid),by="uid") %>% unique()
+
+merged<-merge(uidsiteidkey,stubborndf %>% select(-site_id),by=c("uid"),all=TRUE)
+dataformati<-merged %>% select(year,file,uid,site_id,date_col,units,var,depth,result) %>% arrange(var,site_id)
+objformati<-paste("format_","nla22_waterchem_wide",sep="")
+assign(objformati,data.frame(dataformati))
 
 ##################################################
 
