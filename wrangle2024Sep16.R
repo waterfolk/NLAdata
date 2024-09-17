@@ -480,6 +480,7 @@ assign(objformati,data.frame(dataformati))
 
 result_names<-names(nla22_waterchem_wide)[grep("result",names(nla22_waterchem_wide))]
 units_names<-names(nla22_waterchem_wide)[grep("units",names(nla22_waterchem_wide))]
+units_names<-units_names[-which(units_names=="chla_extract_units")]
 
 year<-c()
 file<-c()
@@ -511,6 +512,8 @@ for(i in 1:length(result_names)){
   var<-c(var,vari)
   depth<-c(depth,depthi)
   result<-c(result,resulti)
+  print(vari[1])
+  print(resulti[1])
 }
 stubborndf<-data.frame(year="2022",file="nla22_waterchem_wide",
                        uid,site_id,date_col,units,
