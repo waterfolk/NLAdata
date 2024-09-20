@@ -292,7 +292,11 @@ datakey <- tribble(
   "units", "uid", "site_id,date_col",
   
   "nla22_algaltoxins","2022","analyte","result",
-  "result_units","uid","site_id,date_col"
+  "result_units","uid","site_id,date_col",
+  
+  "nla22_secchi","2022","var","result",
+  "units","uid","site_id,date_col"
+  
 ) %>% as.data.frame()
 
 
