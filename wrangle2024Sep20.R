@@ -808,6 +808,10 @@ daterr_lats<-daterr1_null
 daterr_lats$var<-"latitude"
 daterr_lats$value<-daterr_lats$lat
 
+daterr_lons<-daterr1_null
+daterr_lons$var<-"longitude"
+daterr_lons$value<-daterr_lons$lon
+
 #maxdepths<-longdata %>%
 #  filter(file %in% c("nla_2017_profile_data","nla2012_wide_profile_08232016")) %>%
 #  select(site_id,depth) %>%
@@ -828,7 +832,7 @@ daterr_profiles_groups<- daterr_profiles_groups %>% select(-uid.x)
 #daterr1<-rbind(daterr1,daterr_areas,daterr_elevs,daterr_lats,daterr_maxdepths)
 
 #daterr1<-rbind(daterr1,daterr_areas,daterr_elevs,daterr_lats,daterr_maxdepths,daterr_profiles_groups)
-daterr1<-rbind(daterr1,daterr_areas,daterr_elevs,daterr_lats,daterr_profiles_groups)
+daterr1<-rbind(daterr1,daterr_areas,daterr_elevs,daterr_lats,daterr_lons,daterr_profiles_groups)
 
 
 #watershed<-watershed %>% select(-variable)
