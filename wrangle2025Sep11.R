@@ -791,6 +791,30 @@ watershed$year<-"2012"
 #watershed<-watershed %>% select(-var)
 #melt(chla %>% select(uid,waterchem_names),id.vars=c("uid")) %>% na.omit()
 
+####################################
+
+# 2017
+ws_area_2017<-nla2017_landMets %>% dplyr::select(site_id,wsareasqkm)
+#nla2017_landMets$wsareasqkm
+ws_area_2022<-nla2022_landscape_wide_0 %>% dplyr::select(site_id,wsareasqkm)
+#nla2022_landscape_wide_0$wsareasqkm
+
+
+nla_2012_lake_basins<-read_csv("nla2012_lake_basins_shp_export.csv") %>% as.data.frame()
+nla_2012_lake_basins<-clean_names(nla_2012_lake_basins)
+ws_area_2012<-nla_2012_lake_basins %>% dplyr::select(site_id=nla12_id,wsareasqkm=area_sq_km)
+
+#ws_area_2012$year<-2012
+#ws_area_2017$year<-2017
+#ws_area_2022$year<-2022
+
+
+ws_areas<-rbind(ws_area_2012,ws_area_2017,ws_area_2022)
+ws_areas<-ws_areas[-which(duplicated(ws_areas$site_id)),]
+
+
+sitedateyears_rbind<-merge(sitedateyears_rbind,ws_areas,by="site_id")
+
 ####################
 daterr0<-longdata
 
@@ -825,6 +849,14 @@ daterr_lons<-daterr1_null
 daterr_lons$var<-"longitude"
 daterr_lons$value<-daterr_lons$lon
 
+daterr_wsarea<-daterr1_null
+daterr_wsarea$var<-"wsareasqkm"
+daterr_wsarea$value<-daterr_lons$wsareasqkm
+
+#daterr_lons<-daterr1_null
+#daterr_lons$var<-"longitude"
+#daterr_lons$value<-daterr1_null$wsareasqkm
+
 #maxdepths<-longdata %>%
 #  filter(file %in% c("nla_2017_profile_data","nla2012_wide_profile_08232016")) %>%
 #  select(site_id,depth) %>%
@@ -845,7 +877,7 @@ daterr_profiles_groups<- daterr_profiles_groups %>% select(-uid.x)
 #daterr1<-rbind(daterr1,daterr_areas,daterr_elevs,daterr_lats,daterr_maxdepths)
 
 #daterr1<-rbind(daterr1,daterr_areas,daterr_elevs,daterr_lats,daterr_maxdepths,daterr_profiles_groups)
-daterr1<-rbind(daterr1,daterr_areas,daterr_elevs,daterr_lats,daterr_lons,daterr_profiles_groups)
+daterr1<-rbind(daterr1,daterr_areas,daterr_elevs,daterr_lats,daterr_lons,daterr_wsarea,daterr_profiles_groups)
 
 
 #watershed<-watershed %>% select(-variable)
@@ -854,6 +886,7 @@ daterr1<-rbind(daterr1,daterr_areas,daterr_elevs,daterr_lats,daterr_lons,daterr_
 #watershed$uid<-""
 #watershed$date_col<-""
 #watershed$unit<-""
+
 
 daterr1<-rbind.fill(daterr1,watershed)
 
@@ -866,23 +899,6 @@ daterr1<-rbind.fill(daterr1,watershed)
 #objs_land_2012 <- grep("2012", objs_land, value = TRUE)
 #objs_land_2012
 
-
-# 2017
-ws_area_2017<-nla2017_landMets %>% dplyr::select(site_id,wsareasqkm)
-#nla2017_landMets$wsareasqkm
-ws_area_2022<-nla2022_landscape_wide_0 %>% dplyr::select(site_id,wsareasqkm)
-  #nla2022_landscape_wide_0$wsareasqkm
-
-
-nla_2012_lake_basins<-read_csv("nla2012_lake_basins_shp_export.csv") %>% as.data.frame()
-nla_2012_lake_basins<-clean_names(nla_2012_lake_basins)
-ws_area_2012<-nla_2012_lake_basins %>% dplyr::select(site_id=nla12_id,wsareasqkm=area_sq_km)
-
-ws_areas<-rbind(ws_area_2012,ws_area_2017,ws_area_2022)
-ws_areas<-ws_areas[-which(duplicated(ws_areas$site_id)),]
-
-daterr1<-daterr1 %>%
-  left_join(ws_areas, by = "site_id")
 
 ################
 
@@ -921,6 +937,8 @@ daterr<-rbind.fill(daterr,daterr_depthmaxes)
 daterr<-daterr %>% arrange(var)
 daterr_out<-daterr
 daterr_out$value<-signif(daterr_out$value,digits=3)
+
+write.csv(head(daterr_out),"daterr_head.csv")
 
 write.csv(daterr_out,"daterr.csv")
 write.csv(sitedateyears_rbind,"sites_trim.csv")
